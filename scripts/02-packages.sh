@@ -9,8 +9,11 @@ sudo pacman -S --needed --noconfirm \
   "${ESSENTIAL_PACKAGES[@]}" \
   "${LAZYVIM_DEPS[@]}"
 
-# echo "-> [Flatpak] Installing Flatpak packages..."
-# flatpak install flathub -y "${FLATPAK_PACKAGES[@]}"
+echo "-> [Flatpak] Installing Flatpak packages..."
+flatpak install flathub -y "${FLATPAK_PACKAGES[@]}"
+
+echo "-> Configure specific flatpaks"
+sudo flatpak override --env=QT_SCALE_FACTOR=1.2 org.kde.okular
 
 echo "-> [AUR] Installing yay packages..."
 yay -S --needed --noconfirm "${AUR_PACKAGES[@]}"

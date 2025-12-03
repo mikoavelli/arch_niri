@@ -15,8 +15,8 @@ sudo chmod +x scripts/*.sh
 ./scripts/05-secureboot.sh
 
 echo "-> [Cleanup] Removing unused dependencies..."
-sudo pacman -Sc --noconfirm
 yay -Yc --noconfirm
+yay -Scc --noconfirm
 flatpak update -y
 flatpak repair
 

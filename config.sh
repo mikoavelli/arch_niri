@@ -17,25 +17,19 @@ NIRI_CORE=(
   noto-fonts-emoji         # Google Noto fonts (Emoji support)
   inter-font               # A typeface specially designed for user interfaces
   ttf-jetbrains-mono-nerd  # JetBrains Mono font patched with Nerd Font symbols
-  swaylock                 # A suggested Wayland screen locker
   waybar                   # A suggested Wayland customizable desktop bar
   dunst                    # Lightweight and customizable notification daemon
-  # ttf-icomoon-feather-git  # Icomoon and Feather font icons
 )
 
 AMD_VIDEO_DRIVERS=(
-  libva-mesa-driver   # VA-API implementation for Gallium drivers
-  libva-utils         # Collection of tools and examples for VA-API
-  lib32-mesa          # 32-bit Mesa OpenGL drivers (for multilib/Steam)
-  lib32-vulkan-radeon # 32-bit Vulkan driver for AMD GPUs
-  mesa                # Open-source OpenGL drivers
-  vulkan-mesa-layers  # Mesa Vulkan layers
-  vulkan-radeon       # Open-source Vulkan driver for AMD GPUs
+  libva-mesa-driver  # VA-API implementation for Gallium drivers
+  libva-utils        # Collection of tools and examples for VA-API
+  vulkan-mesa-layers # Mesa Vulkan layers
+  vulkan-radeon      # Open-source Vulkan driver for AMD GPUs
 )
 
 ESSENTIAL_PACKAGES=(
   adw-gtk-theme         #
-  base-devel            # Build tools (gcc, make, etc.) required for AUR
   bash-completion       # Programmable completion for the bash shell
   bat                   # A cat(1) clone with syntax highlighting and Git integration
   btop                  # Terminal system resource monitor
@@ -65,16 +59,15 @@ ESSENTIAL_PACKAGES=(
   pwgen                 # Password generator
   reflector             # Script to retrieve and filter the latest Pacman mirror list
   sbctl                 # Secure Boot key manager
-  telegram-desktop      # Official Telegram Messenger Desktop Client
   tree                  # Command to produce a depth indented directory listing
   ufw                   # Uncomplicated Firewall
   gnome-disk-utility    #
+  baobab                #
   vlc                   # Multimedia player for various audio and video formats
   vlc-plugin-ffmpeg     # FFMpeg plugin for VLC
   vlc-plugin-freetype   # Freetype font renderer plugin for VLC
   vlc-plugin-x264       # H.264 encoder plugin for VLC
   pavucontrol           # PulseAudio Volume Control application
-  steam                 # Valve's digital software distribution platform
   gamescope             # SteamOS session compositing window manager
   tmux                  # A terminal multiplexer
 )
@@ -96,9 +89,12 @@ AUR_PACKAGES=(
   morewaita-icon-theme       # A comprehensive flat icon theme style
   nautilus-open-any-terminal # Extension for nautilus, which allow opening alacritty from nautilus
   xdg-terminal-exec          # Default Terminal Execution Specification implementation
-  # noctalia-shell             # Custom shell environment
+  swaylock-effects           # A suggested Wayland screen locker
+  ttf-icomoon-feather-git    # Icomoon and Feather font icons (temporary for old waybar config)
 )
 
 FLATPAK_PACKAGES=(
-  org.kde.okular # Document viewer (PDF, EPub, etc.)
+  org.kde.okular          # Document viewer (PDF, EPub, etc.)
+  com.valvesoftware.Steam # Valve's digital software distribution platform
+  org.telegram.desktop    # Official Telegram Messenger Desktop Client
 )

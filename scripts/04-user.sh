@@ -22,11 +22,14 @@ fi
 # fi
 
 echo "-> [User] Config gschemas"
+gsettings set org.gnome.desktop.interface enable-animations false
+gsettings set org.gnome.desktop.wm.preferences focus-mode "sloppy"
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal alacritty
 gsettings set org.gnome.desktop.privacy remember-recent-files false
 gsettings set org.gnome.desktop.privacy disable-camera true
 gsettings set org.gnome.desktop.interface icon-theme "MoreWaita"
 gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
+gsettings set org.gnome.desktop.interface monospace-font-name 'JetBrainsMono Nerd Font 12'
 gsettings set org.gnome.desktop.interface font-name 'Inter 12'
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
 gsettings set org.gnome.desktop.interface document-font-name 'Inter 12'

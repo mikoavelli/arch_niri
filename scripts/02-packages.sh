@@ -14,6 +14,7 @@ flatpak install flathub -y "${FLATPAK_PACKAGES[@]}"
 
 echo "-> Configure specific flatpaks"
 sudo flatpak override --env=QT_SCALE_FACTOR=1.2 org.kde.okular
+sudo flatpak override --filesystem=$HOME/Downloads org.telegram.desktop
 
 echo "-> [AUR] Installing yay packages..."
 yay -S --needed --noconfirm "${AUR_PACKAGES[@]}"

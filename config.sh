@@ -61,6 +61,7 @@ ESSENTIAL_PACKAGES=(
   sbctl                 # Secure Boot key manager
   tree                  # Command to produce a depth indented directory listing
   ufw                   # Uncomplicated Firewall
+  uv                    # An extremely fast Python package and project manager, written in Rust
   gnome-disk-utility    #
   baobab                #
   vlc                   # Multimedia player for various audio and video formats

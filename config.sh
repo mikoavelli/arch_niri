@@ -22,14 +22,15 @@ NIRI_CORE=(
 )
 
 AMD_VIDEO_DRIVERS=(
-  libva-mesa-driver  # VA-API implementation for Gallium drivers
-  libva-utils        # Collection of tools and examples for VA-API
-  vulkan-mesa-layers # Mesa Vulkan layers
-  vulkan-radeon      # Open-source Vulkan driver for AMD GPUs
+  libva-mesa-driver   # VA-API implementation for Gallium drivers
+  libva-utils         # Collection of tools and examples for VA-API
+  lib32-vulkan-radeon # 32-bit Vulkan driver for AMD GPUs (required for many Steam games)
+  vulkan-mesa-layers  # Mesa Vulkan layers
+  vulkan-radeon       # Open-source Vulkan driver for AMD GPUs
 )
 
 ESSENTIAL_PACKAGES=(
-  adw-gtk-theme         #
+  adw-gtk-theme         # Libadwaita look for legacy GTK apps
   bash-completion       # Programmable completion for the bash shell
   bat                   # A cat(1) clone with syntax highlighting and Git integration
   btop                  # Terminal system resource monitor
@@ -41,7 +42,7 @@ ESSENTIAL_PACKAGES=(
   ffmpegthumbnailer     # Lightweight video thumbnailer used by file managers
   firefox               # Popular open-source web browser
   flatpak               # Linux application sandboxing and distribution framework
-  fwupd                 # Daemon to allow session softwaxdg-terminal-execre to update firmware
+  fwupd                 # Daemon to allow session software to update firmware
   git                   # Distributed version control system
   gvfs                  # Virtual filesystem support (trash, MTP, etc.)
   gvfs-mtp              # gvfs backend for MTP devices (Android phones)
@@ -62,14 +63,15 @@ ESSENTIAL_PACKAGES=(
   tree                  # Command to produce a depth indented directory listing
   ufw                   # Uncomplicated Firewall
   uv                    # An extremely fast Python package and project manager, written in Rust
-  gnome-disk-utility    #
-  baobab                #
+  gnome-disk-utility    # Graphical disk and partition manager
+  baobab                # Graphical disk usage analyzer
   vlc                   # Multimedia player for various audio and video formats
   vlc-plugin-ffmpeg     # FFMpeg plugin for VLC
   vlc-plugin-freetype   # Freetype font renderer plugin for VLC
   vlc-plugin-x264       # H.264 encoder plugin for VLC
   pavucontrol           # PulseAudio Volume Control application
   gamescope             # SteamOS session compositing window manager
+  steam                 # Valve's digital software distribution platform
   tmux                  # A terminal multiplexer
 )
 
@@ -95,7 +97,7 @@ AUR_PACKAGES=(
 )
 
 FLATPAK_PACKAGES=(
-  org.kde.okular          # Document viewer (PDF, EPub, etc.)
-  com.valvesoftware.Steam # Valve's digital software distribution platform
-  org.telegram.desktop    # Official Telegram Messenger Desktop Client
+  org.kde.okular              # Document viewer (PDF, EPub, etc.)
+  org.telegram.desktop        # Official Telegram Messenger Desktop Client
+  org.libreoffice.LibreOffice # A powerful, open-source local office productivity suite
 )

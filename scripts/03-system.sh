@@ -21,7 +21,7 @@ sudo ufw default allow outgoing
 sudo ufw enable
 
 echo "-> [System] Enabling necessary services"
-sudo systemctl enable ly.service
+sudo systemctl enable ly@tty1.service
 sudo systemctl enable bluetooth.service
 sudo systemctl enable power-profiles-daemon.service
 sudo systemctl enable ufw.service

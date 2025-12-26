@@ -18,7 +18,6 @@ NIRI_CORE=(
   inter-font               # A typeface specially designed for user interfaces
   ttf-jetbrains-mono-nerd  # JetBrains Mono font patched with Nerd Font symbols
   waybar                   # A suggested Wayland customizable desktop bar
-  dunst                    # Lightweight and customizable notification daemon
 )
 
 AMD_VIDEO_DRIVERS=(
@@ -35,7 +34,6 @@ ESSENTIAL_PACKAGES=(
   bat                   # A cat(1) clone with syntax highlighting and Git integration
   btop                  # Terminal system resource monitor
   wget                  # Utility for non-interactive download of files from the Web
-  blueberry             # A Bluetooth configuration tool
   brightnessctl         # A program to read and control device brightness
   playerctl             # MPRIS media player command-line controller
   dosfstools            # Utilities for creating and checking MS-DOS FAT filesystems
@@ -88,12 +86,11 @@ LAZYVIM_DEPS=(
 )
 
 AUR_PACKAGES=(
-  nmgui-bin                  # A Network Manager gtk4 GUI tool
+  blueberry                  # A Bluetooth configuration tool
   morewaita-icon-theme       # A comprehensive flat icon theme style
   nautilus-open-any-terminal # Extension for nautilus, which allow opening alacritty from nautilus
   xdg-terminal-exec          # Default Terminal Execution Specification implementation
   swaylock-effects           # A suggested Wayland screen locker
-  ttf-icomoon-feather-git    # Icomoon and Feather font icons (temporary for old waybar config)
 )
 
 FLATPAK_PACKAGES=(

@@ -2,7 +2,7 @@
 set -e
 source ./config.sh
 
-echo "-> [Pacman] Installing packages..."
+echo "-> Installing packages..."
 yay -S --needed --noconfirm \
   "${NIRI_CORE[@]}" \
   "${AMD_VIDEO_DRIVERS[@]}" \

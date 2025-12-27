@@ -8,7 +8,7 @@ NIRI_CORE=(
   xwayland-satellite       # For running X11 apps in XWayland
   xdg-desktop-portal-gtk   # A suggested XDG desktop portal backend
   xdg-desktop-portal-gnome # A XDG desktop portal required for screencasting support
-  ly                       # A lightweight TUI (ncurses-like) display manager
+  sddm                     # QML based X11 and Wayland display manager
   rofi                     # A window switcher, application launcher
   wl-clipboard             # Command-line copy/paste utilities for Wayland
   mate-polkit              # Maintained polkit authentication agent
@@ -17,7 +17,6 @@ NIRI_CORE=(
   noto-fonts-emoji         # Google Noto fonts (Emoji support)
   inter-font               # A typeface specially designed for user interfaces
   ttf-jetbrains-mono-nerd  # JetBrains Mono font patched with Nerd Font symbols
-  waybar                   # A suggested Wayland customizable desktop bar
 )
 
 AMD_VIDEO_DRIVERS=(
@@ -53,7 +52,6 @@ ESSENTIAL_PACKAGES=(
   man                   # Utility to display the on-line manual pages
   nautilus              # GTK based File browser
   ntfs-3g               # NTFS filesystem driver and utilities
-  obs-studio            # FOSS for live streaming and screen recording
   power-profiles-daemon # Makes power profiles handling available over D-Bus
   pwgen                 # Password generator
   reflector             # Script to retrieve and filter the latest Pacman mirror list
@@ -63,10 +61,6 @@ ESSENTIAL_PACKAGES=(
   uv                    # An extremely fast Python package and project manager, written in Rust
   gnome-disk-utility    # Graphical disk and partition manager
   baobab                # Graphical disk usage analyzer
-  vlc                   # Multimedia player for various audio and video formats
-  vlc-plugin-ffmpeg     # FFMpeg plugin for VLC
-  vlc-plugin-freetype   # Freetype font renderer plugin for VLC
-  vlc-plugin-x264       # H.264 encoder plugin for VLC
   pavucontrol           # PulseAudio Volume Control application
   gamescope             # SteamOS session compositing window manager
   steam                 # Valve's digital software distribution platform
@@ -86,15 +80,15 @@ LAZYVIM_DEPS=(
 )
 
 AUR_PACKAGES=(
-  blueberry                  # A Bluetooth configuration tool
   morewaita-icon-theme       # A comprehensive flat icon theme style
   nautilus-open-any-terminal # Extension for nautilus, which allow opening alacritty from nautilus
   xdg-terminal-exec          # Default Terminal Execution Specification implementation
-  swaylock-effects           # A suggested Wayland screen locker
 )
 
 FLATPAK_PACKAGES=(
   org.kde.okular              # Document viewer (PDF, EPub, etc.)
   org.telegram.desktop        # Official Telegram Messenger Desktop Client
   org.libreoffice.LibreOffice # A powerful, open-source local office productivity suite
+  org.videolan.VLC            # Multimedia player for various audio and video formats
+  com.obsproject.Studio       # FOSS for live streaming and screen recording
 )

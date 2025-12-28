@@ -8,7 +8,7 @@ NIRI_CORE=(
   xwayland-satellite       # For running X11 apps in XWayland
   xdg-desktop-portal-gtk   # A suggested XDG desktop portal backend
   xdg-desktop-portal-gnome # A XDG desktop portal required for screencasting support
-  sddm                     # QML based X11 and Wayland display manager
+  ly                       # A lightweight TUI (ncurses-like) display manager
   rofi                     # A window switcher, application launcher
   wl-clipboard             # Command-line copy/paste utilities for Wayland
   mate-polkit              # Maintained polkit authentication agent
@@ -80,6 +80,7 @@ LAZYVIM_DEPS=(
 )
 
 AUR_PACKAGES=(
+  noctalia-shell             # A sleek and minimal desktop shell thoughtfully crafted for Wayland
   morewaita-icon-theme       # A comprehensive flat icon theme style
   nautilus-open-any-terminal # Extension for nautilus, which allow opening alacritty from nautilus
   xdg-terminal-exec          # Default Terminal Execution Specification implementation

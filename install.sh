@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-echo "-> Starting Arch Linux: Niri (Waybar) Installation"
+echo "-> Starting Arch Linux: Niri Installation"
 
 # Make scripts executable just in case
 sudo chmod +x scripts/*.sh

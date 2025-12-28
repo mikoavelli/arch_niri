@@ -21,11 +21,11 @@ sudo ufw default allow outgoing
 sudo ufw enable
 
 echo "-> [System] Enabling necessary services"
-sudo systemctl enable sddm.service
+sudo systemctl enable ly@tty2.service
 sudo systemctl enable bluetooth.service
 sudo systemctl enable power-profiles-daemon.service
 sudo systemctl enable ufw.service
 
 echo "-> [System] Disabling unused services"
-sudo systemctl disable remote-fs.target avahi-daemon.service || true
+sudo systemctl disable remote-fs.target avahi-daemon.service getty@tty2.service || true
 sudo systemctl mask remote-fs.target avahi-daemon.service || true

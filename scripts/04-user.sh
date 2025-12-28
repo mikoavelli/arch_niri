@@ -14,13 +14,6 @@ EOT
   chmod 600 ~/.ssh/config
 fi
 
-# echo "-> [User] Cloning LazyVim starter"
-# if [ ! -d "$HOME/.config/nvim" ]; then
-#   git clone https://github.com/LazyVim/starter ~/.config/nvim
-# else
-#   echo "--> Some nvim config already exists"
-# fi
-
 echo "-> [User] Config gschemas"
 gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.desktop.wm.preferences focus-mode "sloppy"

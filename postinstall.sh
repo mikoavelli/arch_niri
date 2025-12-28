@@ -10,6 +10,3 @@ echo "-> Base git configuration"
 git config --global user.email "$email"
 git config --global user.name "$name"
 git config --global core.editor "nvim"
-
-# echo "-> Installing external application for Firefox extension 'Video DownloadHelper'"
-# curl -sSLf https://github.com/aclap-dev/vdhcoapp/releases/latest/download/install.sh | bash

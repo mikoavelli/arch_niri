@@ -14,6 +14,12 @@ EOT
   chmod 600 ~/.ssh/config
 fi
 
+echo "-> [User] Additional required setup for 'ideapad' extension"
+echo "%wheel ALL=(ALL) NOPASSWD: /usr/bin/tee /sys/bus/platform/drivers/ideapad_acpi/VPC????\:??/conservation_mode" | sudo tee /etc/sudoers.d/ideapad
+if ! grep -q "ideapad_laptop" /etc/modules; then
+  echo "ideapad_laptop" | sudo tee -a /etc/modules
+fi
+
 echo "-> [User] Config gschemas"
 gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.desktop.wm.preferences focus-mode "sloppy"

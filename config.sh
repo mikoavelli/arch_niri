@@ -61,7 +61,6 @@ ESSENTIAL_PACKAGES=(
   uv                    # An extremely fast Python package and project manager, written in Rust
   gnome-disk-utility    # Graphical disk and partition manager
   baobab                # Graphical disk usage analyzer
-  pavucontrol           # PulseAudio Volume Control application
   gamescope             # SteamOS session compositing window manager
   steam                 # Valve's digital software distribution platform
   tmux                  # A terminal multiplexer

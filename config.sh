@@ -17,6 +17,7 @@ NIRI_CORE=(
   noto-fonts-emoji         # Google Noto fonts (Emoji support)
   inter-font               # A typeface specially designed for user interfaces
   ttf-jetbrains-mono-nerd  # JetBrains Mono font patched with Nerd Font symbols
+  quickshell               # Toolkit for creating desktop shell (required to tweak noctalia-shell)
 )
 
 AMD_VIDEO_DRIVERS=(
@@ -79,7 +80,6 @@ LAZYVIM_DEPS=(
 )
 
 AUR_PACKAGES=(
-  noctalia-shell             # A sleek and minimal desktop shell thoughtfully crafted for Wayland
   morewaita-icon-theme       # A comprehensive flat icon theme style
   nautilus-open-any-terminal # Extension for nautilus, which allow opening alacritty from nautilus
   xdg-terminal-exec          # Default Terminal Execution Specification implementation

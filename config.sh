@@ -33,6 +33,7 @@ ESSENTIAL_PACKAGES=(
   bash-completion       # Programmable completion for the bash shell
   bat                   # A cat(1) clone with syntax highlighting and Git integration
   btop                  # Terminal system resource monitor
+  code                  # The Open Source build of Visual Studio Code (vscode) editor
   wget                  # Utility for non-interactive download of files from the Web
   brightnessctl         # A program to read and control device brightness
   playerctl             # MPRIS media player command-line controller

@@ -11,6 +11,9 @@ git config --global user.email "$email"
 git config --global user.name "$name"
 git config --global core.editor "nvim"
 
+echo "-> Directories tweaks"
+rm -r ~/Templates ~/Public
+
 echo "-> Change noctalia lock screen wallpaper to mine default on specific monitor"
 echo "-> Check 'niri msg outputs' to select monitor"
 qs -c noctalia-shell ipc call wallpaper set $HOME/.config/background eDP-1

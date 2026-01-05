@@ -84,7 +84,7 @@ AUR_PACKAGES=(
   morewaita-icon-theme       # A comprehensive flat icon theme style
   nautilus-open-any-terminal # Extension for nautilus, which allow opening alacritty from nautilus
   xdg-terminal-exec          # Default Terminal Execution Specification implementation
-  code-marketplace	     # Enable vscode marketplace in Code OSS
+  visual-studio-code-bin     # Visual Studio Code (vscode) official binaryvisual-studio-code-bin     
 )
 
 FLATPAK_PACKAGES=(

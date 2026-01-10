@@ -13,6 +13,3 @@ git config --global core.editor "nvim"
 
 echo "-> Directories tweaks"
 rm -r ~/Templates ~/Public
-
-echo "-> Change noctalia lock screen wallpaper to mine default on specific monitor"
-echo "-> Check 'niri msg outputs' to select monitor"
